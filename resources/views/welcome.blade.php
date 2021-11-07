@@ -4,7 +4,7 @@
 
 @section('content')
 
-<h1> testando</h1>
+<h1>testando</h1>
 
 
 @endsection

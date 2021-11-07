@@ -19,47 +19,45 @@
 </head>
 <body>
     <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-    <a class="navbar-brand" href="/">CTRL EMPRÉSTIMOS</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
-    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/">Home</a>
-        </li>
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Cadastrar
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="/usuarios">Usuário</a></li>
-                <li><a class="dropdown-item" href="/materiais">Matériais</a></li>
+    <!--<nav class="navbar navbar-expand-lg navbar-light bg-light">  -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="/">CTRL EMPRÉSTIMOS</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true">Usuário</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="/cadastrarusuario">Cadastrar</a></li>
+                        <li><a class="dropdown-item" href="#">Consultar</a></li>
+                        <li><a class="dropdown-item" href="#">Excluir</a></li>
+                    </ul>
+            </li>
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true">Material</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="/cadastrarmateriais">Cadastrar</a></li>
+                        <li><a class="dropdown-item" href="#">Consultar</a></li>
+                        <li><a class="dropdown-item" href="#">Excluir</a></li>
+                    </ul>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link" href="#">Emprestar</a>
+            </li>         
             </ul>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="/emprestimos">Emprestimos</a>
-        </li>
-        
-        <li class="nav-item">
-            <a class="nav-link disabled">Agendar</a>
-        </li>
-        </ul>
-        <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-    </div>
-    </div>
-    </nav>  
+        </div>
+        </nav>
     </helder>
     
     @yield('content')
     <footer>
-        <p>CTRL EMPRÉSTIMOS;2021</p>
+        <p>SISTEMA DE CONTROLE EMPRÉSTIMOS;2021</p>
     </footer>   
     <!--Biblioteca Ionec da Google uso de icones-->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
