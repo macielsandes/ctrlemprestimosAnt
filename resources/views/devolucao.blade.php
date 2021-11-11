@@ -4,6 +4,6 @@
 
 @section('content')
 
-<h1>Pagina de emprestimo</h1>
+<h1>Devolução</h1>
 
 @endsection

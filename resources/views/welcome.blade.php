@@ -1,10 +1,13 @@
 @extends('layouts.main')
 
-@section('title','Sistema de controle de emprestimos')
+@section('title','CTRL Emprestimos')
 
 @section('content')
 
-<h1>testando</h1>
+<h1>PAGINA INICIAL</h1>
+
+</div>
+
 
 
 @endsection

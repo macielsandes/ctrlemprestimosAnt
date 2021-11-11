@@ -1,45 +1,40 @@
 @extends('layouts.main')
 
-@section('title','Materiais')
+@section('title','Cadastro de Materiais')
 
 @section('content')
-
-<h1>Paginas de Materiais</h1>
-
-<div class="collapse navbar-collapse" id="navbarSupportedContent">                
-              <ul class="navbar-nav mr-auto">
-                  <li class="nav-item active">
-                    <a class="nav-link" href="/">HOME<span class="sr-only"></span></a>
-                  </li>
-                  <li class="nav-item active">                      
-                        <a class="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        MATERIAIS
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="/">Cadastrar</a>
-                            <a class="dropdown-item" href="/">Editar</a>
-                            <a class="dropdown-item" href="/">Excluir</a>
-                        </div>
-                   </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Dropdown
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
-                    </li>
-                        <li class="nav-item">
-                        <a class="nav-link disabled" href="#">Disabled</a>
-                    </li>
-                </ul>
-                <div>
+<div class="container-fluid">
+<h2> Cadastro de Materiais</h2>
+  <form>
+    <div class="form-group mb-3">
+        <label for="inputDescricao1">Descrição:</label>
+        <input type="text" class="form-control form-control-sm" id="inputDescricao" aria-describedby="nomeHelp" placeholder="Computador/notebook/projetor">
+    </div>
+    <div class="form-group mb-3">
+      <label for="inputDescricao1">Número de serie:</label>
+      <input type="text" class="form-control form-control-sm" id="inputAddress" placeholder="Serie">
+    </div>
+    <div class="form-group mb-3">
+      <label for="inputAddress">Patrimônio:</label>
+      <input type="text" class="form-control form-control-sm" id="inputAddress" placeholder="Numero Patrimonio">
+      <small id="emailHelp" class="form-text text-muted">Informar numero de patrimônio, caso o material possua.</small>
+    </div>
+    <div class="form-group mb-3">  
+    <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+      <option selected>Categoria:</option>
+      <option value="1">Notebook</option>
+      <option value="2">Acessório</option>
+      <option value="3">Projetor</option>
+    </select>
+    </div>
+    <div class="form-group mb-3">
+      <label for="inputAddress2">Quantidade:</label>
+      <input type="text" class="form-control form-control-sm" id="inputDescricao" placeholder="Quantidade">
+      <small id="emailHelp" class="form-text text-muted">Quantidade disponível</small>
+    </div>  
+    <button type="submit" class="btn btn-primary">Salvar</button>
+    </div>
+  </form>  
+</div>
 
 @endsection
-
-
-
-

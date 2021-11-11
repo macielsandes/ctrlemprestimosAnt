@@ -18,43 +18,43 @@
     <script src="/js/scripts.js"></script>
 </head>
 <body>
-    <header>
-    <!--<nav class="navbar navbar-expand-lg navbar-light bg-light">  -->
+<header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
         <a class="navbar-brand" href="/">CTRL EMPRÉSTIMOS</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-            <li class="nav-item active">
-                <a class="nav-link" href="/">Home</a>
-            </li>
-            <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true">Usuário</a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="/cadastrarusuario">Cadastrar</a></li>
-                        <li><a class="dropdown-item" href="#">Consultar</a></li>
-                        <li><a class="dropdown-item" href="#">Excluir</a></li>
-                    </ul>
-            </li>
-            <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true">Material</a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="/cadastrarmateriais">Cadastrar</a></li>
-                        <li><a class="dropdown-item" href="#">Consultar</a></li>
-                        <li><a class="dropdown-item" href="#">Excluir</a></li>
-                    </ul>
-            </li>
-            
-            <li class="nav-item">
-                <a class="nav-link" href="#">Emprestar</a>
-            </li>         
-            </ul>
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="/usuarios">Usuários</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="/materiais">Materiais</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="/emprestimos">Empréstimos</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="/devolucao">Devolução</a>
+                </li>                        
+            </ul> 
+            <div class="d-grid gap-1 d-md-flex justify-content-md-end">
+                    <button class="btn btn-primary" type="submit">Sair</button> 
+            </div>  
+        </div>            
         </div>
-        </nav>
-    </helder>
-    
+           
+    </div>
+    </nav>
+</helder>   
+
+
+ <!--Define o Rodape da pagina-->    
     @yield('content')
     <footer>
         <p>SISTEMA DE CONTROLE EMPRÉSTIMOS;2021</p>

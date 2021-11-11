@@ -19,15 +19,18 @@ Route::get('/', function () {
 });
 
 //rotas para Material
-Route::get('/cadastrarmateriais', function(){
-    return view('cadastrarmateriais'); 
+Route::get('/materiais', function(){
+    return view('materiais'); 
 });
 
-Route::get('/cadastrarusuario', function () {
-    return view('cadastrarusuario');
+Route::get('/usuarios', function () {
+    return view('usuarios');
 });
 
-
-Route::get('/Emprestimos', function () {
+Route::get('/emprestimos', function () {
     return view('emprestimos');
+});
+
+Route::get('/devolucao', function () {
+    return view('devolucao');
 });
