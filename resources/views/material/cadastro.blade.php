@@ -3,9 +3,10 @@
 @section('title','Cadastro de Materiais')
 
 @section('content')
+
 <div class="container-fluid">
 <h2> Cadastro de Materiais</h2>
-  <form>
+<form method="POST" action="/cadastromaterial">
     <div class="form-group mb-3">
         <label for="inputDescricao1">Descrição:</label>
         <input type="text" class="form-control form-control-sm" id="inputDescricao" aria-describedby="nomeHelp" placeholder="Computador/notebook/projetor">
@@ -36,5 +37,4 @@
     </div>
   </form>  
 </div>
-
 @endsection

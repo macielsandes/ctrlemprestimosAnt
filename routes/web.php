@@ -18,17 +18,18 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/usuario', function () {
+    return view('usuario');
+});
+
 //rotas para Material
-Route::get('/materiais', function(){
-    return view('materiais'); 
-});
+Route::get('/material', [MaterialController::class, 'index']);
+#{
+   # return view('material'); 
+#});
 
-Route::get('/usuarios', function () {
-    return view('usuarios');
-});
-
-Route::get('/emprestimos', function () {
-    return view('emprestimos');
+Route::get('/emprestimo', function () {
+    return view('emprestimo');
 });
 
 Route::get('/devolucao', function () {

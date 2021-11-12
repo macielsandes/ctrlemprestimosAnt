@@ -31,13 +31,13 @@
                 <a class="nav-link active" aria-current="page" href="/">Home</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="/usuarios">Usuários</a>
+                <a class="nav-link" href="/usuario">Usuários</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="/materiais">Materiais</a>
+                <a class="nav-link" href="/material">Materiais</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="/emprestimos">Empréstimos</a>
+                <a class="nav-link" href="/emprestimo">Empréstimos</a>
                 </li>
                 <li class="nav-item">
                 <a class="nav-link" href="/devolucao">Devolução</a>

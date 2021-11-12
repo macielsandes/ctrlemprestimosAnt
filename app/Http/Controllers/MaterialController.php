@@ -7,10 +7,13 @@ use Illuminate\Http\Request;
 class MaterialController extends Controller
 {
  
-    public function index(){
+    public function index(){       
 
-        $material= Material::all();
+        return view (view: '/material');        
+    }
 
-        return view ();        
+    public function cadastro(){       
+
+        return view (view: '/material/cadastro');        
     }
 }
