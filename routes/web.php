@@ -1,7 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PrincipalController;
+use App\Http\Controllers\UsuarioController;
 use App\Http\Controllers\MaterialController;
+use App\Http\Controllers\EmprestimoController;
+use App\Http\Controllers\DevolucaoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,24 +18,12 @@ use App\Http\Controllers\MaterialController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [PrincipalController::class, 'index']);
 
-Route::get('/usuario', function () {
-    return view('usuario');
-});
+Route::get('/usuario', [UsuarioController::class,'index']); 
 
-//rotas para Material
-Route::get('/material', [MaterialController::class, 'index']);
-#{
-   # return view('material'); 
-#});
+Route::get('/material', [MaterialController::class,'index']); 
 
-Route::get('/emprestimo', function () {
-    return view('emprestimo');
-});
+Route::get('/emprestimo', [EmprestimoController::class,'index']);
 
-Route::get('/devolucao', function () {
-    return view('devolucao');
-});
+Route::get('/devolucao', [DevolucaoController::class,'index']);

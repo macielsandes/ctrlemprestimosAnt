@@ -28,37 +28,36 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    <a class="nav-link active" aria-current="page" href="/">Home</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="/usuario">Usuários</a>
+                    <a class="nav-link" href="/usuario">Usuários</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="/material">Materiais</a>
+                    <a class="nav-link" href="/material">Materiais</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="/emprestimo">Empréstimos</a>
+                    <a class="nav-link" href="/emprestimo">Empréstimos</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="/devolucao">Devolução</a>
+                    <a class="nav-link" href="/devolucao">Devolução</a>
                 </li>                        
-            </ul> 
+            </ul>
             <div class="d-grid gap-1 d-md-flex justify-content-md-end">
-                    <button class="btn btn-primary" type="submit">Sair</button> 
-            </div>  
-        </div>            
-        </div>
-           
+                <button class="btn btn-primary" type="submit">Sair</button> 
+            </div>                 
+        </div>                
     </div>
     </nav>
 </helder>   
-
-
  <!--Define o Rodape da pagina-->    
     @yield('content')
     <footer>
-        <p>SISTEMA DE CONTROLE EMPRÉSTIMOS;2021</p>
-    </footer>   
+        <div>
+            <p> CTRL EMPRÉSTIMOS - SISTEMA DE CONTROLE EMPRÉSTIMOS;2021</p>
+        </div>   
+    </footer>
+
     <!--Biblioteca Ionec da Google uso de icones-->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     
