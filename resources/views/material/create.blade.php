@@ -17,6 +17,10 @@
         <input type="text" class="form-control form-control-sm" id="inputAddress" placeholder="Serie">
       </div>
       <div class="form-group mb-3">
+        <label for="inputDescricao1">Fabricante:</label>
+        <input type="text" class="form-control form-control-sm" id="inputAddress" placeholder="Fabricante">
+      </div>
+      <div class="form-group mb-3">
         <label for="inputAddress">Patrimônio</label>
         <input type="text" class="form-control form-control-sm" id="inputAddress" placeholder="Numero Patrimonio">
         <small id="emailHelp" class="form-text text-muted">Informar numero de patrimônio, caso o material possua.</small>

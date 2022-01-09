@@ -10,4 +10,8 @@ class MaterialController extends Controller
         return view ('material');
      }
 
+    public function cadastro(){   
+        return view ('material/create');
+     }
+
 }
