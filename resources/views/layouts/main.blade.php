@@ -51,12 +51,14 @@
     </nav>
 </helder>   
  <!--Define o Rodape da pagina-->    
-    @yield('content')
+ <div class="container">
+ @yield('content')
     <footer>
         <div>
-            <p> CTRL EMPRÉSTIMOS - SISTEMA DE CONTROLE EMPRÉSTIMOS;2021</p>
+            <p> CTRL EMPRÉSTIMOS - SISTEMA DE CONTROLE EMPRÉSTIMOS;2022</p>
         </div>   
     </footer>
+ </div>
 
     <!--Biblioteca Ionec da Google uso de icones-->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

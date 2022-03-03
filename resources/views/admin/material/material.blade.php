@@ -3,17 +3,18 @@
 @section('title','Materiais')
 
 @section('content')
-<div class="container-fluid">  
-  <a class="btn btn-primary" href="material/create" role="button">Novo</a> 
+<div class="container-fluid"> 
+<a type="button" class="btn btn-primary" href="{{route('material.create') }}">Novo </a>
 </div>
+
 <div class="container-fluid">
   <h5>Materiais</h5> 
     <table class="table">
       <thead>
         <tr>
-          <th scope="col">#</th>
+          <th scope="col">Id</th>
           <th scope="col">Descrição</th>
-          <th scope="col">Número de serie:</th>
+          <th scope="col">Serie:</th>
           <th scope="col">Categoria</th>
           <th scope="col">Quantidade</th>
         </tr>
