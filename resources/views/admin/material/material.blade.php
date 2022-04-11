@@ -1,10 +1,9 @@
 @extends('layouts.main')
-
 @section('title','Materiais')
-
 @section('content')
+   <!--Cadastrando novo material -->
 <div class="container-fluid"> 
-<a type="button" class="btn btn-primary" href="{{route('material.create') }}">Novo </a>
+  <a type="button" class="btn btn-primary" href="{{route('material.create') }}">Cadastrar</a>
 </div>
 
 <div class="container-fluid">
@@ -19,7 +18,7 @@
           <th scope="col">Quantidade</th>
         </tr>
       </thead>
-      <tbody>
+      <body>
         <tr>
           <th scope="row">1</th>
           <td>Mark</td>
